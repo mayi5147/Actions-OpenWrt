@@ -164,8 +164,8 @@ jobs:
         rm -rf sha256sums
         rm -rf version.buildinfo
         rm -rf profiles.json
-        rm -rf Lede-mediatek-mt7622-xiaomi_redmi-router-ax6s.manifest
-        rm -rf Lede-mediatek-mt7622-xiaomi_redmi-router-ax6s -initramfs-recovery.itb
+        rm -rf openwrt-mediatek-mt7622-xiaomi_redmi-router-ax6s.manifest
+        rm -rf openwrt-mediatek-mt7622-xiaomi_redmi-router-ax6s -initramfs-recovery.itb
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
         
