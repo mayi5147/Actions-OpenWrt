@@ -48,8 +48,8 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/MeIsReallyBa/immortalwrt
-  REPO_BRANCH: openwrt-18.06-k5.4
+  REPO_URL: git clone https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/ax6s.config
   DIY_P1_SH: script/diy-part1.sh
