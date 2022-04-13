@@ -157,7 +157,7 @@ jobs:
       id: organize
       if: env.UPLOAD_FIRMWARE == 'true' && !cancelled()
       run: |
-        cd openwrt/bin/targets/*/*
+        cd openwrt/bin/targets/mediatek/mt7622
         rm -rf packages
         rm -rf config.buildinfo
         rm -rf feeds.buildinfo
