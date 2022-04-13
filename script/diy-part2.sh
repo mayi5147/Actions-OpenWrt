@@ -48,9 +48,9 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/M
 #pushd package/community
 
 # Add luci-theme-argon
-#git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
-#git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
-#rm -rf ../lean/luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon-18.06
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+rm -rf ../lede/feeds/luci/themes/luci-theme-argon
 
 # Add Lienol's Packages
 #git clone --depth=1 https://github.com/Lienol/openwrt-package
