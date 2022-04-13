@@ -48,8 +48,8 @@ on:
 
 
 env:
-  REPO_URL: https://github.com/MeIsReallyBa/immortalwrt
-  REPO_BRANCH: openwrt-18.06-k5.4
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/ax6sfull.config
   DIY_P1_SH: script/diy-part1.sh
@@ -164,8 +164,8 @@ jobs:
         rm -rf sha256sums
         rm -rf version.buildinfo
         rm -rf profiles.json
-        rm -rf immortalwrt-mediatek-mt7622-xiaomi_redmi-router-ax6s.manifest
-        rm -rf immortalwrt-mediatek-mt7622-xiaomi_redmi-router-ax6s -initramfs-recovery.itb
+        rm -rf Lede-mediatek-mt7622-xiaomi_redmi-router-ax6s.manifest
+        rm -rf Lede-mediatek-mt7622-xiaomi_redmi-router-ax6s -initramfs-recovery.itb
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
         
