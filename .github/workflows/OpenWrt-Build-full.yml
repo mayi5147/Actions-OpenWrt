@@ -9,7 +9,7 @@
 #代码里有 name: 后面的内容随便改,冒号后面是有个空格的,如果修改固件名字就要考虑能不能显示出你想要的
 
 
-name: 编译RedmiAX6s通用固件
+name: 编译OpenWrt通用固件
 
 on:
   repository_dispatch:
@@ -63,7 +63,7 @@ env:
 
 jobs:
   build:
-    name: 编译RedmiAX6s通用固件
+    name: 编译OpenWrt通用固件
     runs-on: ubuntu-20.04
 
     steps:
