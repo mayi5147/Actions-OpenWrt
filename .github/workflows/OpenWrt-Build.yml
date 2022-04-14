@@ -111,7 +111,7 @@ jobs:
         ./scripts/feeds update -a
         ./scripts/feeds install -a
 
-    - name: 加载.config设置
+    - name: 加载.config设置跟自定义设置
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
