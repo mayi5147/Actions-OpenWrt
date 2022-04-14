@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 # 删除lede自带argon主题
-rm -rf ../lede/package/feeds/luci/luci-theme-argon
+rm -rf package/feeds/luci/luci-theme-argon
 
 # 克隆新的argon主题及主题设置
 git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon.git package/feeds/luci/luci-theme-argon
