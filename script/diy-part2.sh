@@ -13,8 +13,8 @@
 rm -rf package/feeds/luci/luci-theme-argon
 
 # 克隆新的argon主题及主题设置
-git clone https://github.com/281677160/openwrt-package/tree/master/luci-theme-argon package/feeds/luci/luci-theme-argon
-# git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/feeds/luci/luci-app-argon-config
+git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/feeds/luci/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/feeds/luci/luci-app-argon-config
 
 # 修改argon为默认主题
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile 
