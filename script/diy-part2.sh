@@ -17,7 +17,8 @@ git clone --depth=1 https://github.com/jerrykuku/luci-theme-argon package/feeds/
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/feeds/luci/luci-app-argon-config
 
 # 修改argon为默认主题
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile 
+# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile 
+sed -i 's /bootstrap/argon/g ' feeds/luci/collections/luci/Makefile
 
 # 修改openwrt登陆地址,把下面的192.168.31.1修改成你想要的就可以了
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
